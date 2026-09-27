@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Import Tech | Pagamento</title><link rel="stylesheet" href="payment.css"></head>
+<body>
+<header class="topbar"><div class="brand"><img src="logo.jpeg"><div><strong>IMPORT TECH</strong><span>CHECKOUT SEGURO</span></div></div><button onclick="location.href='dashboard.html'">← VOLTAR À LOJA</button></header>
+<main class="checkout"><div class="step"><span class="done">1</span> CARRINHO <i></i><span class="done">2</span> DADOS DA EMPRESA <i></i><span class="done">3</span> VERIFICAÇÃO <i></i><span class="active">4</span> PAGAMENTO <i></i><span>5</span> CONFIRMAÇÃO</div>
+<div class="checkout-grid"><section class="box"><div class="box-head"><div><span class="eyebrow">PAGAMENTO</span><h1>Finalize seu pedido</h1><p>Escolha uma forma de pagamento.</p></div></div>
+<div class="methods"><button class="method active" data-method="pix"><b>PIX</b><small>Aprovação imediata</small></button><button class="method" data-method="card"><b>CARTÃO</b><small>Crédito ou débito</small></button></div>
+<div id="pixArea" class="pix-area"><div class="qr-wrap"><div id="qr" class="qr"></div><small>QR CODE DEMONSTRATIVO</small></div><div class="pix-info"><h2>Pagamento via PIX</h2><p>Abra o aplicativo do seu banco e escaneie o QR Code.</p><label>PIX Copia e Cola</label><div class="copy"><input id="pixCode" readonly><button id="copyBtn">COPIAR</button></div><div class="notice">⚠ Este QR Code é <b>fictício</b> e serve apenas para demonstração do projeto.</div></div></div>
+<div id="cardArea" class="card-area hidden"><label>Número do cartão<input placeholder="0000 0000 0000 0000" maxlength="19"></label><div class="twocol"><label>Validade<input placeholder="MM/AA"></label><label>CVV<input placeholder="000"></label></div><label>Nome no cartão<input placeholder="NOME COMPLETO"></label></div>
+<button id="confirm" class="confirm">CONFIRMAR PAGAMENTO</button><div id="success" class="success hidden">✓ Pagamento simulado confirmado! Seu pedido foi registrado.</div></section>
+<aside class="summary box"><span class="eyebrow">RESUMO</span><h2>Seu pedido</h2><div id="companyInfo" class="company-info"></div><div id="items"></div><div class="total"><span>Total</span><strong id="total">R$ 0,00</strong></div></aside></div></main><script src="payment.js"></script></body></html>

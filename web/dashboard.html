@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Tech | Loja</title>
+    <link rel="stylesheet" href="loja.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <img src="logo.jpeg" alt="Import Tech">
+        <div>
+            <strong>IMPORT TECH</strong>
+            <span>IMPORTADOS • ATACADO</span>
+        </div>
+    </div>
+
+    <div class="search-box">
+        <span>⌕</span>
+        <input type="text" id="searchInput" placeholder="Buscar roupas, perfumes e produtos...">
+    </div>
+
+    <div class="top-actions">
+        <button class="icon-btn" id="cartButton" title="Carrinho">🛒 <b id="cartCount">0</b></button>
+        <button class="user-btn" id="ownerButton">GESTÃO</button><button class="user-btn" id="logoutButton">SAIR</button>
+    </div>
+</header>
+
+<div class="layout">
+    <aside class="sidebar">
+        <nav>
+            <button class="menu-item active" data-category="todos">⌂ <span>Início</span></button>
+            <button class="menu-item" data-category="roupas">👕 <span>Roupas</span></button>
+            <button class="menu-item" data-category="perfumes">✦ <span>Perfumes</span></button>
+            <button class="menu-item" data-category="acessorios">◈ <span>Acessórios</span></button>
+            <button class="menu-item" data-category="kits">▣ <span>Kits</span></button>
+            <button class="menu-item" data-category="ofertas">⚡ <span>Ofertas</span></button>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="status"><i></i> SISTEMA ONLINE</div>
+            <small>Import Tech © 2026</small>
+        </div>
+    </aside>
+
+    <main class="content">
+        <section class="hero">
+            <div>
+                <span class="eyebrow">IMPORTADOS EM GRANDE QUANTIDADE</span>
+                <h1>Produtos para quem<br><strong>compra para revender.</strong></h1>
+                <p>Encontre roupas, perfumes e kits com condições especiais para compras em volume.</p>
+                <button class="primary-btn" id="heroButton">VER PRODUTOS</button>
+            </div>
+            <div class="hero-art">
+                <div class="glow"></div>
+                <span>ATACADO</span>
+                <strong>IMPORT</strong>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">
+                <div>
+                    <span class="eyebrow">CATÁLOGO</span>
+                    <h2>Produtos em destaque</h2>
+                </div>
+                <span id="resultInfo"></span>
+            </div>
+
+            <div class="category-row">
+                <button class="category-chip active" data-category="todos">Todos</button>
+                <button class="category-chip" data-category="roupas">Roupas</button>
+                <button class="category-chip" data-category="perfumes">Perfumes</button>
+                <button class="category-chip" data-category="acessorios">Acessórios</button>
+                <button class="category-chip" data-category="kits">Kits</button>
+            </div>
+
+            <div class="products" id="products"></div>
+        </section>
+    </main>
+</div>
+
+<div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+        <div>
+            <span class="eyebrow">SEU PEDIDO</span>
+            <h2>Carrinho</h2>
+        </div>
+        <button id="closeCart">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+        <div><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+        <button class="primary-btn" id="finishButton">FINALIZAR PEDIDO</button>
+    </div>
+</div>
+
+<div class="overlay" id="overlay"></div>
+<div class="toast" id="toast"></div>
+
+<script src="loja.js"></script>
+</body>
+</html>

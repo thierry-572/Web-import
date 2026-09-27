@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Import Tech | Verificação</title>
+<link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <img src="logo.jpeg" alt="Import Tech">
+        <div><strong>IMPORT TECH</strong><span>CHECKOUT SEGURO</span></div>
+    </div>
+    <button onclick="location.href='checkout-cadastro.html'">← VOLTAR</button>
+</header>
+
+<main class="checkout">
+
+    <div class="step">
+        <span class="done">1</span> CARRINHO <i></i>
+        <span class="done">2</span> DADOS DA EMPRESA <i></i>
+        <span class="active">3</span> VERIFICAÇÃO <i></i>
+        <span>4</span> PAGAMENTO <i></i>
+        <span>5</span> CONFIRMAÇÃO
+    </div>
+
+    <div class="center-wrap">
+        <section class="box form-box" style="text-align:center">
+
+            <div class="verify-icon">✉</div>
+
+            <span class="eyebrow">VERIFICAÇÃO DE E-MAIL</span>
+            <h1 style="font-size:22px;margin:9px 0 6px">Confirme seu e-mail</h1>
+            <p style="color:#8698a1;font-size:11px;line-height:1.6">
+                Enviamos um código de verificação de 6 dígitos para<br>
+                <span class="verify-target" id="targetEmail">—</span>
+            </p>
+
+            <form id="verificacaoForm">
+                <div class="code-inputs" id="codeInputs">
+                    <input type="text" inputmode="numeric" maxlength="1" autocomplete="one-time-code">
+                    <input type="text" inputmode="numeric" maxlength="1">
+                    <input type="text" inputmode="numeric" maxlength="1">
+                    <input type="text" inputmode="numeric" maxlength="1">
+                    <input type="text" inputmode="numeric" maxlength="1">
+                    <input type="text" inputmode="numeric" maxlength="1">
+                </div>
+
+                <button type="submit" class="primary-btn" id="verifyBtn">VERIFICAR E CONTINUAR</button>
+            </form>
+
+            <div class="resend-row">
+                Não recebeu o código?
+                <button type="button" id="resendBtn">Reenviar código</button>
+            </div>
+
+            <div class="ghost-note">
+                ⚠ Ambiente de demonstração: o código exibido é fictício e qualquer sequência de 6 dígitos é aceita para fins de teste.
+            </div>
+
+        </section>
+    </div>
+
+</main>
+
+<script src="checkout-verificacao.js"></script>
+</body>
+</html>

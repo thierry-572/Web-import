@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Import Tech | Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- LADO DA MARCA -->
+        <section class="brand-side">
+
+            <div class="brand-content">
+
+                <!-- LOGO -->
+                <img
+                    src="logo.jpeg"
+                    alt="Import Tech"
+                    class="logo"
+                >
+
+                <!-- LINHA -->
+                <div class="brand-line"></div>
+
+                <!-- TEXTO -->
+                <h1 class="brand-title">
+                    <strong>Tecnologia.</strong><br>
+                    Conectando negócios.<br>
+                    Gerando resultados.
+                </h1>
+
+                <!-- DESCRIÇÃO -->
+                <p class="brand-description">
+                    Tecnologia que conecta fronteiras,
+                    simplifica operações e transforma
+                    informação em resultado para sua empresa.
+                </p>
+
+                <!-- INFORMAÇÕES -->
+                <div class="brand-info">
+
+                    <div class="info-item">
+                        <span class="info-number">
+                            NOVA
+                        </span>
+
+                        <span class="info-label">
+                            FEITO POR
+                        </span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-number">
+                            24/7
+                        </span>
+
+                        <span class="info-label">
+                            DISPONIBILIDADE
+                        </span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-number">
+                            PRO
+                        </span>
+
+                        <span class="info-label">
+                            GESTÃO
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LADO DO LOGIN -->
+        <section class="login-side">
+
+            <div class="login-box">
+
+                <!-- CABEÇALHO -->
+                <div class="login-header">
+
+                    <div class="login-small-title">
+                        ÁREA RESTRITA
+                    </div>
+
+                    <h2 class="login-title">
+                        Bem-vindo.
+                    </h2>
+
+                    <p class="login-subtitle">
+                        Entre com suas credenciais para continuar.
+                    </p>
+
+                </div>
+
+
+                <!-- FORMULÁRIO -->
+                <form id="loginForm">
+
+                    <!-- CÓDIGO DO FUNCIONÁRIO -->
+                    <div class="field">
+
+                        <label
+                            class="field-label"
+                            for="codigoFuncionario"
+                        >
+                            Código de funcionário
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <input
+                                type="text"
+                                id="codigoFuncionario"
+                                name="codigoFuncionario"
+                                placeholder="Digite seu código"
+                                autocomplete="username"
+                                required
+                            >
+
+                            <!-- ÍCONE USUÁRIO -->
+                            <svg
+                                class="field-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                            >
+
+                                <circle
+                                    cx="12"
+                                    cy="8"
+                                    r="4"
+                                />
+
+                                <path
+                                    d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SENHA -->
+                    <div class="field">
+
+                        <label
+                            class="field-label"
+                            for="senhaEmpresa"
+                        >
+                            Senha da empresa
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <input
+                                type="password"
+                                id="senhaEmpresa"
+                                name="senhaEmpresa"
+                                placeholder="Digite sua senha"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <!-- ÍCONE OLHO -->
+                            <svg
+                                class="field-icon password-toggle"
+                                id="togglePassword"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                            >
+
+                                <path
+                                    d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"
+                                />
+
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="2.5"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BOTÃO -->
+                    <button
+                        type="submit"
+                        class="btn-login"
+                    >
+                        ENTRAR
+                    </button>
+
+
+                    <!-- MENSAGEM -->
+                    <div
+                        class="message"
+                        id="message"
+                    ></div>
+
+                </form>
+
+
+                <!-- STATUS -->
+                <div class="system-status">
+
+                    <span class="status-dot"></span>
+
+                    SISTEMA OPERACIONAL
+
+                </div>
+
+
+                <!-- RODAPÉ -->
+                <div class="login-footer">
+                    NOVA
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

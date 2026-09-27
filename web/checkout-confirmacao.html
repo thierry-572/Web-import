@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Import Tech | Pagamento confirmado</title>
+<link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <img src="logo.jpeg" alt="Import Tech">
+        <div><strong>IMPORT TECH</strong><span>CHECKOUT SEGURO</span></div>
+    </div>
+    <button onclick="location.href='dashboard.html'">← VOLTAR À LOJA</button>
+</header>
+
+<main class="checkout">
+
+    <div class="step">
+        <span class="done">1</span> CARRINHO <i></i>
+        <span class="done">2</span> DADOS DA EMPRESA <i></i>
+        <span class="done">3</span> VERIFICAÇÃO <i></i>
+        <span class="done">4</span> PAGAMENTO <i></i>
+        <span class="active">5</span> CONFIRMAÇÃO
+    </div>
+
+    <div class="center-wrap">
+        <section class="box confirm-wrap" id="confirmBox">
+
+            <div class="check-circle">✓</div>
+
+            <h1 class="confirm-title">Pagamento confirmado!</h1>
+            <p class="confirm-sub" id="confirmSub">
+                Seu pedido foi registrado com sucesso e a nota será enviada para o e-mail da empresa.
+            </p>
+
+            <div class="receipt" id="receipt"></div>
+
+            <div class="confirm-actions">
+                <button class="btn-secondary" onclick="window.print()">IMPRIMIR RECIBO</button>
+                <button class="btn-primary-solid" onclick="location.href='dashboard.html'">VOLTAR À LOJA</button>
+            </div>
+
+        </section>
+    </div>
+
+</main>
+
+<script src="checkout-confirmacao.js"></script>
+</body>
+</html>

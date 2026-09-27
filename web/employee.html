@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Import Tech | Funcionário</title><link rel="stylesheet" href="owner.css"></head>
+<body>
+<header class="topbar"><div class="brand"><img src="logo.jpeg"><div><strong>IMPORT TECH</strong><span>PERFIL DO FUNCIONÁRIO</span></div></div><div class="owner-status"><i></i>SISTEMA ONLINE</div><button class="back-btn" onclick="logout()">SAIR</button></header>
+<main class="owner-content" style="max-width:1250px">
+  <div class="heading"><div><span class="eyebrow">ÁREA DA EQUIPE</span><h1>Olá, <span id="employeeName">Funcionário</span> 👋</h1><p>Atenda pedidos, consulte estoque e registre atividades da loja.</p></div><button class="primary" onclick="location.href='dashboard.html'">IR PARA A LOJA</button></div>
+  <div class="cards three"><div class="stat"><span>PEDIDOS PAGOS</span><strong id="paidCount">0</strong><em>aguardando operação</em></div><div class="stat"><span>VENDAS HOJE</span><strong id="todaySales">R$ 0,00</strong><em>pedidos registrados</em></div><div class="stat"><span>ESTOQUE BAIXO</span><strong id="lowStock">0</strong><em class="warn">produtos precisam de atenção</em></div></div>
+  <div class="quick-grid"><button onclick="showTab('orders')">🛒 <b>Atender pedidos</b><small>Atualizar o status</small></button><button onclick="showTab('stock')">📦 <b>Consultar estoque</b><small>Ver disponibilidade</small></button><button onclick="registerActivity()">✓ <b>Registrar atendimento</b><small>Salvar uma atividade</small></button><button onclick="logout()">↪ <b>Sair</b><small>Encerrar acesso</small></button></div>
+  <section id="orders" class="section active-section"><div class="panel"><div class="panel-head"><div><span class="eyebrow">OPERAÇÃO</span><h2>Pedidos</h2></div><input id="orderSearch" placeholder="Buscar pedido..." oninput="renderOrders()"></div><div class="table-wrap"><table><thead><tr><th>PEDIDO</th><th>CLIENTE</th><th>VALOR</th><th>FORMA</th><th>STATUS</th><th>AÇÃO</th></tr></thead><tbody id="ordersTable"></tbody></table></div></div></section>
+  <section id="stock" class="section"><div class="panel"><div class="panel-head"><div><span class="eyebrow">INVENTÁRIO</span><h2>Consulta de estoque</h2></div></div><div id="stockList" class="stock-editor"></div></div></section>
+  <section class="section" id="activity"><div class="panel"><span class="eyebrow">ATIVIDADES</span><h2>Registro de atendimento</h2><div id="activityList" class="customer-list"></div></div></section>
+</main>
+<script src="employee.js"></script></body></html>
