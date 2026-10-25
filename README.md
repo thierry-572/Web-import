@@ -45,7 +45,6 @@ Para testar o fluxo de login durante o desenvolvimento, foram definidos os segui
 | Login | `6767` | `1234` |
 | Senha | `1234` | `4321` |
 
-> ⚠️ **Importante:** essas credenciais devem ser utilizadas somente em ambiente de demonstração. Não utilize senhas reais ou administrativas em um repositório público. Se o login estiver implementado apenas no JavaScript do navegador, os dados poderão ser descobertos por qualquer pessoa que inspecione o código. Uma aplicação real precisa de autenticação e autorização no servidor.
 
 ## 🧰 Tecnologias
 
