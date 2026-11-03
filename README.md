@@ -86,18 +86,7 @@ Abra o arquivo `index.html` no navegador, caso esse seja o arquivo principal do 
 - Organizar e documentar um projeto utilizando Git e GitHub.
 - Desenvolver habilidades úteis para projetos futuros de comércio eletrônico.
 
-## 🔮 Melhorias futuras
 
-Algumas possibilidades para a evolução do projeto:
-
-- [ ] Adicionar catálogo de produtos com imagens, preços e descrições.
-- [ ] Implementar pesquisa e filtros de produtos.
-- [ ] Criar uma área administrativa para gerenciar o catálogo.
-- [ ] Implementar cadastro e autenticação seguros.
-- [ ] Integrar um banco de dados para armazenar usuários e produtos.
-- [ ] Melhorar a responsividade para celulares e tablets.
-- [ ] Adicionar carrinho de compras e gerenciamento de pedidos.
-- [ ] Criar testes para validar os fluxos de login e cadastro.
 
 ## 👨‍💻 Autor
 
